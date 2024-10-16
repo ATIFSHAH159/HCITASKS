@@ -1,38 +1,70 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+/* General body style for dark background */
+body {
+    background-color: #333333; /* Dark gray background */
+    color: #ffffff; /* White text for contrast */
+    font-family: Arial, sans-serif;
+    padding: 20px;
   }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+  
+  /* Form container styling */
+  form {
+    background-color: #444444; /* Slightly lighter dark gray for forms */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    margin-bottom: 20px;
   }
-  to {
-    transform: rotate(360deg);
+  
+  /* Form input field styles */
+  input {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: none;
+    border-radius: 5px;
+    box-sizing: border-box;
+    background-color: #555555; /* Even lighter dark gray */
+    color: #ffffff; /* White text */
   }
-}
+  
+  /* Heading styles */
+  h2 {
+    color: #b19cd9; /* Purple heading color */
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  /* Button styles */
+  button {
+    background-color: #b19cd9; /* Purple button background */
+    color: #ffffff; /* White text */
+    border: none;
+    padding: 10px 20px;
+    margin: 10px 5px;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+  }
+  
+  /* Button hover effect */
+  button:hover {
+    background-color: #a38ec6; /* Slightly darker purple */
+    transform: scale(1.05); /* Button grows slightly on hover */
+  }
+  
+  /* Button focus effect */
+  button:focus {
+    outline: none;
+    box-shadow: 0 0 0 2px #e6e6ff; /* Purple focus ring */
+  }
+  
+  /* Styling for cancel button */
+  button[type="button"] {
+    background-color: #666666; /* Gray for cancel button */
+  }
+  
+  button[type="button"]:hover {
+    background-color: #555555; /* Slightly darker gray on hover */
+  }
+  
